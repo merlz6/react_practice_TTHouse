@@ -1,0 +1,24 @@
+{
+  "name": "react_practice_TTHouse",
+  "version": "1.0.0",
+  "description": "React practice - teamtreehouse react path",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merlz6/react_practice_TTHouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merlz6/react_practice_TTHouse/issues"
+  },
+  "homepage": "https://github.com/merlz6/react_practice_TTHouse#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.15"
+  }
+}
