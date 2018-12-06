@@ -50,7 +50,8 @@ app.use(express.static('public'));
 // =======================================
 //              CONTROLLERS
 // =======================================
-
+const projectController = require('./controllers/projects.js')
+app.use('/projects', projectController);
 
 
 
