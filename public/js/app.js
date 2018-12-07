@@ -1,12 +1,3 @@
-// const header = (
-//   <div class="jumbotron jumbotron-fluid">
-//   <div class="container">
-//     <h1 class="display-4">Project Tracker</h1>
-//     <p class="lead">Track and view all your project ideas in a clean and organized view.</p>
-//   </div>
-// </div>
-// )
-
 const players = [
   {
     name: "Guil",
@@ -52,6 +43,7 @@ const Player = (props) => {
 }
 
 class Counter extends React.Component {
+
   state = {
     score: 0
   };
@@ -59,7 +51,7 @@ class Counter extends React.Component {
   incrementScore() {
     this.setState({
       score: this.state.score + 1
-    });
+    })
   }
 
   render() {
@@ -67,7 +59,7 @@ class Counter extends React.Component {
       <div className="counter">
         <button className="counter-action decrement"> - </button>
         <span className="counter-score">{ this.state.score }</span>
-        <button className="counter-action increment" onClick={this.incrementScore}> + </button>
+        <button className="counter-action increment" onClick={this.incrementScore.bind(this)}> + </button>
       </div>
     );
   }
@@ -85,6 +77,7 @@ const App = (props) => {
       {props.initialPlayers.map( player =>
         <Player
           name={player.name}
+          score={player.score}
           key={player.id.toString()}
         />
       )}
